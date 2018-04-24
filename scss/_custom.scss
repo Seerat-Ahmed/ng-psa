@@ -1,0 +1,26 @@
+// Here you can add other styles
+.show {
+    display: block;
+}
+
+.show-flex {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+.floating-btn__container {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 24px;
+    margin-right: 24px;
+    position: fixed;
+    right: 0;
+    button {
+        &:focus {
+            outline: none;
+        }
+    }
+}
