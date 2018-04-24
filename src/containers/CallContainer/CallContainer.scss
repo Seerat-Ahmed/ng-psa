@@ -1,0 +1,115 @@
+@import "../../styles/partials/variables";
+
+.call-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Open Sans Condensed';
+  text-transform: capitalize;
+
+  .call-container__recent__header {
+    position: relative;
+    padding: 10px;
+    font-size: 24px;
+    color: #0E1A35;
+    text-align: left;
+    text-transform: capitalize;
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    opacity: 0.1;
+    background: #8492AF;
+  }
+
+  .call-container__recent {
+    position: relative;
+    width: 100%;
+
+    background-color: $white;
+    border: 0.2px solid $grey;
+
+    .loader {
+      position: relative;
+      left: 40%;
+    }
+
+    .call-container__recent__contacts {
+      display: flex;
+      flex-flow: row wrap;     
+      max-height: 280px; 
+      text-align: left;
+      overflow-y: scroll;
+      overflow-x: hidden;
+
+      .contact {
+        width: 100%;
+        padding-top: 10px;
+        text-indent: 1em;
+
+        .profile-photo {
+          width: 30px;
+          height: 30px;
+          float: left;
+
+          img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 50%;
+            top: 2px;
+          }
+        }
+
+        .description {
+          position: relative;
+          left: 2%;
+
+          span {
+            font-size: 14px;
+          }
+        }
+
+        .activity {
+          position: relative;
+          bottom: 10px;
+          left: 2%;
+          text-indent: 2.3em;
+
+          span {
+            position: relative;
+            font-size: $font-size-small;
+            text-transform: lowercase;
+            color: #8492AF;
+            left: 1%;
+          }
+
+          img {
+            position: relative;
+            top: 1.8px;
+            width: 12.5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.input-container {
+  position: relative;
+  top: 5%;
+
+  input {
+    width: 100%;
+    margin: auto;
+    background: #FDFDFD;
+    border: 1px solid rgba(151,151,151,0.26);
+    padding: 0.2em;
+    text-align: center;
+    font-size: 24px;
+  }
+}

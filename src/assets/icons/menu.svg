@@ -1,0 +1,19 @@
+<svg width="26px" height="20px" viewBox="0 0 26 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect x="53" y="48" width="26" height="20" id="rect-1"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard-Home" transform="translate(-371.000000, -47.000000)">
+            <g id="Menus" transform="translate(-1.000000, -129.000000)">
+                <g id="Top-menu" transform="translate(319.000000, 128.000000)">
+                    <g id="Menu">
+                        <image x="53" y="48" width="26" height="20" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAUCAYAAACTQC2+AAABdGlDQ1BJQ0MgUHJvZmlsZQAAKJF9kDtLA1EQRk8SRdFICi1ELBaMVon4AElpkiIIKUKMYNRms+YhJOuy2WDEVrCxCFiINr4K/4BoK1gLgqIIYuFPULQRWWeNEh/gwDCH787MnRlw+1XDKDYNQUm3zGQsokynZ5SWB1x48DHMqKqVjXAiEUfsK/60l2vJFrsMOr3+vv9r7fPZsgauVuExzTAt4XHhviXLcHheuMuUoYSrDufrvO5wps67HzmpZFT4SFjRCqrUua6EA1rBLIHb+cuf+ZaT/8alYkX7nMfZxJvVpyYl9oj3UiZJjAgKGSosUMQiKFEHK1u1nKLoorFsLuQLlhKWC2SVCV0bDCgjQ8MhcO75+04NbVFmDz2Dp9bQMptwsgbdtw3NvwO+VTg+M1RT/ZA84u5cDh4PoSMNnRfQNlvOjY7UN/FGoPnetp/6oWUD3mq2/bpn22/7UnwHp3r9Np+9OLiB1ArEz2FrGwakt2/uHcP6Z2Kh5affAAAASklEQVRIDWPkkzL9z0AHwEQHO8BWDD+LWID+YqRH8DH+/0+XtMBAtzhiBCZveoQcAyiO6BJ2dAu64WfRaD4iOyuM5iOyg2745SMABGkKPBZKa5IAAAAASUVORK5CYII="></image>
+                        <use fill-opacity="0" fill="#000000" fill-rule="evenodd" xlink:href="#rect-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

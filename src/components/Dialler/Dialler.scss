@@ -1,0 +1,141 @@
+@import "../../styles/partials/variables",
+         "../../styles/partials/mixins";
+
+@include keyframes(blink) {
+ 0% {
+   opacity: 1;
+ }
+ 50% {
+   opacity: 0;
+ }
+ 100% {
+   opacity: 1;
+ }
+}
+
+.dialler-container {
+  position: fixed;
+  width: 23%;
+  max-height: 90vh;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  background: #FFFFFF;
+  font-family: 'Open Sans Condensed';
+  color: #000;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+
+  @extend %trans;
+
+  .dialler-container__input {
+    display: flex;
+    position: relative;
+    padding: 10%;
+    font-size: 30px;
+    justify-content: center;
+    border-bottom: 1px solid #EFEFEF;
+
+    .cursor {
+      position: relative;
+      font-size: 26px;
+      opacity: 1;
+      font-weight: 300;
+      box-sizing: border-box;
+      // bottom: 7px;
+      white-space: pre;
+      @include animation("blink 1.2s infinite");
+
+      :after {
+      	content:"|";
+      	opacity: 0;
+      	animation: cursor 1.2s infinite;
+      }
+
+    }
+
+    .dialler-container__close__modal {
+      position: absolute;
+      top: 0;
+      right: 1%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .dialler-container__numbers {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 12%;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+
+    .dialler-btn {
+      position: relative;
+      display: flex;
+      width: 33.3%;
+      box-sizing: border-box;
+      margin-bottom: 30px;
+      justify-content: space-around;
+
+      .dialler-btn__circle {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        padding: 1%;
+        border: 1px solid #27AAE1;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 1.4;
+
+        span {
+          font-size: 36px;
+          color: #585B63;
+          letter-spacing: 0.38px;
+        }
+
+        &.line-height {
+          line-height: 2;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .dialler-btn__circle__blue {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        padding: 1%;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 3.8;
+        background: #27AAE1;
+
+        svg {
+          fill: #FFF;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .bottom {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      max-height: 50%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+    }
+  }
+}

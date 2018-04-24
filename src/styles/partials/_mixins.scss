@@ -1,0 +1,64 @@
+// === Fonts === \\
+@mixin rounded-corner(){
+    -moz-border-radius: $radius-button;
+    -webkit-border-radius: $radius-button;
+    border-radius: $radius-button;
+}
+
+@mixin google-font($font) {
+    $font: unquote($font);
+    @import url(https://fonts.googleapis.com/css?family=#{$font});
+}
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: unquote($shadow);
+    -moz-box-shadow: unquote($shadow);
+    -ms-box-shadow: unquote($shadow);
+    -o-box-shadow: unquote($shadow);
+    box-shadow: unquote($shadow);
+}
+// text rendering
+@mixin text-rendering() {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// === Positioning === \\
+@mixin position($pos: absolute, $top: 0, $lft: 0,$wid: 100%, $hgt: 100%) {
+    position: $pos;
+    top: $top;
+    left: $lft;
+    width: $wid;
+    height: $hgt;
+    @content;
+}
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+}
+// === Animations === \\
+@mixin keyframes($animation-name) {
+     @-webkit-keyframes #{$animation-name}{
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+         @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+         @content;
+    }
+    @-o-keyframes #{$animation-name} {
+         @content;
+    }
+    @keyframes #{$animation-name} {
+         @content;
+    }
+}
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};
+}

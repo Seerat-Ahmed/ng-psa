@@ -1,0 +1,129 @@
+@import "./partials/index.scss";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700');
+
+body,
+html {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: $grey;
+  overflow-x: hidden;
+}
+
+.hide {
+  visibility: hidden;
+  width: 0% !important;
+  left: -23% !important;
+}
+
+.show {
+  visibility: visible;
+}
+
+.show-flex {
+  display: flex;
+}
+
+#root {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans Condensed', sans-serif;
+
+  .container__sidebar-nav-logo {
+    height: 75px;
+    text-align: center;
+
+    img {
+      position: relative;
+      height: 85%;
+      top: 8%;
+    }
+  }
+
+  .container__sidebar-nav {
+    position: relative;
+    width: 23%;
+    height: 100%;
+    background-color: $dark-blue;
+    color: $white;
+    @extend  %trans;
+
+    ul {
+      li {
+        // height: 55px;
+        border-bottom: 2px solid $divider;
+        line-height: 3.5;
+
+        a {
+          position: relative;
+          text-decoration: none;
+          color: $white;
+          padding: 17px;
+          height: 100%;
+          width: 100%;
+        }
+
+        &.active {
+          background: $active-link;
+
+          a {
+            &::before {
+              position: absolute;
+              content: '';
+              width: 5px;
+              height: 100%;
+              background-color: $turqoise;
+              padding: 0;
+              left: 0;
+              top: 0;
+            }
+          }
+        }
+
+        &:hover {
+          background: $active-link;
+          border: 1px 0 1px 0 solid $white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .container__top-menu {
+    width: 100%;
+    height: 75px;
+    background-color: $white;
+    border-bottom: 1px solid rgba(132,146,175,0.30);
+  }
+
+  .container__content {
+    width: 100%;
+
+    .container__top-menu {
+      img {
+        position: relative;
+        top: 35%;
+        left: 2%;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .container__content-holder {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

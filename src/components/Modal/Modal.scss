@@ -1,0 +1,15 @@
+@import "../../styles/partials/variables";
+
+.modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  @extend %trans;
+}
+
+.modal-overlay__light {
+  background-color: rgba(241, 241, 241, 0.74);
+  z-index: 2;
+}

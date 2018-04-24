@@ -1,0 +1,6 @@
+{
+  "name": "Transcriptions",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Transcriptions.js"
+}
